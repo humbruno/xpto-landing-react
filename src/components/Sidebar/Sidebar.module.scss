@@ -1,5 +1,3 @@
-/* SIDEBAR STYLES */
-
 .sidebar {
   position: fixed;
   top: 110px;
@@ -14,10 +12,10 @@
   border-top-left-radius: 8px;
 
   transition: all 150ms ease-in-out;
-}
 
-.sidebar.active {
-  width: 160px;
+  &.active {
+    width: 160px;
+  }
 }
 
 .hamburgerMenu {
@@ -29,27 +27,27 @@
   text-align: center;
 
   background-color: transparent;
-}
 
-.hamburgerMenu span {
-  display: block;
-  width: 33px;
-  height: 4px;
+  span {
+    display: block;
+    width: 33px;
+    height: 4px;
 
-  margin-bottom: 5px;
-  border-radius: 3px;
+    margin-bottom: 5px;
+    border-radius: 3px;
 
-  background-color: var(--txt-primary);
+    background-color: var(--txt-primary);
 
-  transition: all 150ms ease-in-out;
-}
+    transition: all 150ms ease-in-out;
+  }
 
-.hamburgerMenu:hover {
-  cursor: pointer;
-}
+  &:hover {
+    cursor: pointer;
 
-.hamburgerMenu:hover span {
-  transform: scale(1.2);
+    span {
+      transform: scale(1.2);
+    }
+  }
 }
 
 .navList {
@@ -58,19 +56,19 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-}
 
-.navList li {
-  display: none;
-  user-select: none;
+  li {
+    display: none;
+    user-select: none;
 
-  font-size: 1.25rem;
-  letter-spacing: 2px;
-}
+    font-size: 1.25rem;
+    letter-spacing: 2px;
 
-.navList li:hover {
-  cursor: pointer;
-  text-decoration: underline;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
 }
 
 .sidebar.active .navList li {
