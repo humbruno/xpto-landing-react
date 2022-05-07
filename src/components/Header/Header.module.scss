@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: #fff;
+
+  padding: 0 20px;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.profileInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 1rem;
+
+  img {
+    width: 50px;
+    border-radius: 50%;
+  }
+
+  strong {
+    background-color: var(--clr-primary);
+    padding: 0 10px;
+    border-radius: 12px;
+  }
+}

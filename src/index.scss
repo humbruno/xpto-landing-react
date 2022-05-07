@@ -1,5 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+:root {
+  /* brand colors from logo */
+  --clr-primary: #26c6ff;
+  --clr-secondary: #fc8373;
+
+  --txt-primary: #fff;
+  --txt-secondary: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: var(--txt-primary);
 }
