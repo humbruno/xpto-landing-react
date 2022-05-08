@@ -35,7 +35,7 @@ Dependencies used for this project:
 
 ## 🔌 Live Website Link
 
-- [Live Website](https://weather.brunosantos.dev/)
+- [Live Website](https://xpto-react.brunosantos.dev/)
 
 ## 📥 Installing and executing
 
