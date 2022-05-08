@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 
 import Header from "./components/Header/Header";
 import Sidebar from "./components/Sidebar/Sidebar";
@@ -14,6 +14,9 @@ function App() {
       <Header />
       <Sidebar />
       <Switch>
+        <Route path="/" exact>
+          <Redirect to="/about" />
+        </Route>
         <Route path="/about">
           <About />
         </Route>

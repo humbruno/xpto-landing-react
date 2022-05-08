@@ -3,6 +3,8 @@ import { useState } from "react";
 
 import useHttp from "../hooks/use-http";
 
+import UserItem from "../components/UserItem/UserItem";
+
 const Competitors = () => {
   const [data, setData] = useState(null);
   const { isLoading, error, sendRequest } = useHttp();
@@ -21,7 +23,7 @@ const Competitors = () => {
     content = (
       <ul>
         {data.map((user) => (
-          <li key={user.id}>{user.name.firstname}</li>
+          <UserItem key={user.id}>{user.name.firstname}</UserItem>
         ))}
       </ul>
     );
@@ -29,7 +31,7 @@ const Competitors = () => {
 
   return (
     <div>
-      <h1>Competitors page</h1>
+      <h1>All Competitors</h1>
       {content}
     </div>
   );
