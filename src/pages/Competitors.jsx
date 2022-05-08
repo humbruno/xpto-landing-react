@@ -16,9 +16,9 @@ const Competitors = () => {
   let content = "";
 
   if (isLoading) {
-    content = <h2>Loading...</h2>;
+    content = <h3>Loading...</h3>;
   } else if (!isLoading && error) {
-    content = <h2>Something went wrong!</h2>;
+    content = <h3>Something went wrong!</h3>;
   } else if (!isLoading && data) {
     content = (
       <ul>
@@ -31,7 +31,7 @@ const Competitors = () => {
 
   return (
     <div>
-      <h1>All Competitors</h1>
+      <h2>All Competitors</h2>
       {content}
     </div>
   );

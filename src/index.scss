@@ -41,3 +41,24 @@ a:visited {
   text-decoration: none;
   color: var(--txt-primary);
 }
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  letter-spacing: 2px;
+
+  margin: 10px 0;
+}
+
+p {
+  max-width: 100ch;
+  margin: 0 auto;
+
+  font-size: 1.15rem;
+}
+main {
+  text-align: center;
+}

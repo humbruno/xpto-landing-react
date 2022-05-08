@@ -24,16 +24,14 @@
 
 ## 💻 Project
 
-Weather forecast for the next 5 days using the MetaWeather public API.
-
-Select one of five big cities to see what the weather will look like in the near future.
+React version of the landing page for XPTO Competition. This project was initially a Single-page Application created with vanilla JS, HTML & CSS and has now been refactored to React for a smoother experience.
 
 Dependencies used for this project:
 
 - [React](https://reactjs.org/)
-- [React Router DOM v5](https://styled-components.com/)
-- [SCSS](https://github.com/axios/axios)
-- [SCSS Modules](https://www.metaweather.com/api/)
+- [React Router DOM v5](https://v5.reactrouter.com/web/guides/quick-start)
+- [SCSS](https://sass-lang.com/)
+- [SCSS Modules](https://github.com/css-modules/css-modules)
 
 ## 🔌 Live Website Link
 

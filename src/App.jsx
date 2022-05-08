@@ -13,20 +13,23 @@ function App() {
     <React.Fragment>
       <Header />
       <Sidebar />
-      <Switch>
-        <Route path="/" exact>
-          <Redirect to="/about" />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/competitors">
-          <Competitors />
-        </Route>
-        <Route path="/winners">
-          <Winners />
-        </Route>
-      </Switch>
+      <main>
+        <h1>XPTO Competition</h1>
+        <Switch>
+          <Route path="/" exact>
+            <Redirect to="/about" />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/competitors">
+            <Competitors />
+          </Route>
+          <Route path="/winners">
+            <Winners />
+          </Route>
+        </Switch>
+      </main>
     </React.Fragment>
   );
 }

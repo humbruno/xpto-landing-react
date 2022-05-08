@@ -22,7 +22,7 @@ const Sidebar = () => {
           <NavLink
             to="/about"
             activeClassName={styles.activeTab}
-            className={styles.navItemAbout}
+            className={styles.navItem}
           >
             About
           </NavLink>
@@ -31,7 +31,7 @@ const Sidebar = () => {
           <NavLink
             to="/competitors"
             activeClassName={styles.activeTab}
-            className={styles.navItemUsers}
+            className={styles.navItem}
           >
             Competitors
           </NavLink>
@@ -40,7 +40,7 @@ const Sidebar = () => {
           <NavLink
             to="/winners"
             activeClassName={styles.activeTab}
-            className={styles.navItemWinners}
+            className={styles.navItem}
           >
             Winners
           </NavLink>

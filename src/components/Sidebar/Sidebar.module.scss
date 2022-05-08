@@ -79,5 +79,9 @@
   padding: 2px 5px;
   border-radius: 8px;
 
-  background-color: var(--clr-primary);
+  background-color: var(--bg-primary);
+
+  &.navItem {
+    color: var(--clr-secondary);
+  }
 }
