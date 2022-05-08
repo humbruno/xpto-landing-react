@@ -13,7 +13,7 @@ function App() {
     <React.Fragment>
       <Header />
       <Sidebar />
-      <main>
+      <main className="card">
         <h1>XPTO Competition</h1>
         <Switch>
           <Route path="/" exact>

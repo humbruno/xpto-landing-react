@@ -4,10 +4,19 @@ import { useState } from "react";
 import useHttp from "../hooks/use-http";
 
 import UserItem from "../components/UserItem/UserItem";
+import UserDetails from "../components/UserDetails/UserDetails";
 
 const Competitors = () => {
   const [data, setData] = useState(null);
+  const [userDetails, setUserDetails] = useState(null);
   const { isLoading, error, sendRequest } = useHttp();
+
+  const clickHandler = (id, email) => {
+    setUserDetails({
+      ranking: id,
+      email: email,
+    });
+  };
 
   useEffect(() => {
     sendRequest("?limit=10", setData);
@@ -23,7 +32,12 @@ const Competitors = () => {
     content = (
       <ul>
         {data.map((user) => (
-          <UserItem key={user.id}>{user.name.firstname}</UserItem>
+          <UserItem
+            onClick={() => clickHandler(user.id, user.email)}
+            key={user.id}
+          >
+            {user.name.firstname}
+          </UserItem>
         ))}
       </ul>
     );
@@ -33,6 +47,12 @@ const Competitors = () => {
     <div>
       <h2>All Competitors</h2>
       {content}
+      {userDetails && (
+        <ul>
+          <UserDetails>Ranking: {userDetails.ranking}</UserDetails>
+          <UserDetails>Email: {userDetails.email}</UserDetails>
+        </ul>
+      )}
     </div>
   );
 };

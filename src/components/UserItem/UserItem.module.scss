@@ -2,7 +2,17 @@
   font-size: 1.25rem;
   text-transform: capitalize;
 
-  background-color: rgb(255, 212, 212);
+  background-color: var(--clr-tertiary);
+  color: var(--txt-secondary);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
   padding: 6px 20px;
   border-radius: 12px;
+
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
 }
