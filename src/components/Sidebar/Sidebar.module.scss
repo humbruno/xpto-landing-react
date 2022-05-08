@@ -74,3 +74,10 @@
 .sidebar.active .navList li {
   display: block;
 }
+
+.activeTab {
+  padding: 2px 5px;
+  border-radius: 8px;
+
+  background-color: var(--clr-primary);
+}
